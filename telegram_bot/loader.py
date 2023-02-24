@@ -1,9 +1,8 @@
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from data.config import settings
 
-from data import config
-
-# ToDo: what is parse mode for bot
-bot = Bot(token=config.BOT_TOKEN)
+# ToDo: what is parse mode for bot.py
+bot = Bot(token=settings.BOT_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
