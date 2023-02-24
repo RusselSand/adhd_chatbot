@@ -20,3 +20,11 @@ if __name__ == '__main__':
                            skip_updates=True,
                            on_startup=on_startup,
                            on_shutdown=on_shutdown)
+
+# async def set_default_commands(dp):
+#     await dp.bot.set_my_commands(
+#         [
+#             types.BotCommand("start", "Botni ishga tushurish"),
+#             types.BotCommand("help", "Yordam"),
+#         ]
+#     )

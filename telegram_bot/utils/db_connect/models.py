@@ -8,6 +8,7 @@ class User(db.Model):
     __tablename__ = 'users'
 
     user_id = db.Column(db.String, primary_key=True)
+    user_telegram_id = db.Column(db.Integer)
     user_account = db.Column(db.String)
     created_at = db.Column(db.DateTime(timezone=True), default=func.now())
     user_email = db.Column(db.String)
